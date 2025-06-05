@@ -7,5 +7,10 @@ jobs:
         runs-on: ubuntu-latest
 
         steps: 
-         - name : Print variable
-           run: echo "$({ secrets.TOKEN_SECRET })
+         - name: Print variable
+           run: echo "$({ secrets.TOKEN_SECRET })"
+
+         - name: setup
+           uses: actions/setup-node@v4 
+           with:
+              node-version: '18'
