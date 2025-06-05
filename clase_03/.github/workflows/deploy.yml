@@ -1,16 +1,28 @@
 name: Deploy
 
-on: push
+on: [push]
 
-jobs: 
-    first_jobs:
-        runs-on: ubuntu-latest
+jobs:
+  first_job:  # Nombre del job (sin 's' al final)
+    runs-on: ubuntu-latest  # Faltaba especificar el sistema operativo
+    
+    services:
+      redis:
+        image: redis
+        ports:
+          - 6379:6379  # El puerto destino debe ser 6379 (no 379)
+    
+    steps:
+      - name: Install redis cli
+        run: sudo apt-get update -y && sudo apt-get install redis-tools -y
 
-        steps: 
-         - name: Print variable
-           run: echo "$({ secrets.TOKEN_SECRET })"
+      - name: Test redis
+        run: redis-cli -h localhost ping  # No necesita especificar puerto si es el default
 
-         - name: setup
-           uses: actions/setup-node@v4 
-           with:
-              node-version: '18'
+      - name: Print variable
+        run: echo "$({ secrets.TOKEN_SECRET )}"  # Sintaxis correcta para secrets
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
