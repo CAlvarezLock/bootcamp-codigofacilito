@@ -9,6 +9,7 @@ jobs:
     strategy:
       matrix:
         message: ["Hola","CodigoFacilito","Bootcamp GitHub Action"]
+        mensaje: [1,2]
     
     steps:
       - name: Print mensaje
