@@ -4,16 +4,24 @@ on: push
 
 jobs:
   first_job:
+    name: Tutotial CodigoFacilito action
     runs-on: ubuntu-latest 
 
     env:
       NAME: CodigoFacilito
 
     steps:
-      - name: Hola Mundo
-        run: echo "Hola Mundo $NAME"
+      - name: working dir
+        run: ls -al
+
+      - name: Action
+        uses: actions/checkout@v4
+
+      - name: working dir after action
+        run: ls -al
 
   second_job:
+    name: Second action
     # if: false para forzar a no ejecutarse
     if: ${{ github.ref == 'refs/heads/main'}} # contextos | siempre y cuando la referencia sea main
     needs: first_job
