@@ -1,4 +1,4 @@
-name: Deploy to server
+name: clase_02
 
 on: push
 
