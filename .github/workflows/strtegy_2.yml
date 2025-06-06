@@ -1,7 +1,0 @@
-name: clase_02
-
-on: push
-
-jobs:
-  first_job:
-    runs-on: ubuntu-latest 
