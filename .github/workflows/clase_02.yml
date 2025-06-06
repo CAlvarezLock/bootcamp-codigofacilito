@@ -12,10 +12,10 @@ jobs:
 
   second_job:
     # if: false para forzar a no ejecutarse
-    if: ${{ github.ref == 'refs/heads/main'}} # siempre y cuando la referencia sea main
+    if: ${{ github.ref == 'refs/heads/main'}} # contextos | siempre y cuando la referencia sea main
     needs: first_job
     runs-on: ubuntu-latest # debe ser el mismo que el primero
     
     steps:
       - name: Hola Mundo
-        run: echo "Hola Mundo Segundo"
+        run: echo "Hola Mundo ${{ github.ref }}"
