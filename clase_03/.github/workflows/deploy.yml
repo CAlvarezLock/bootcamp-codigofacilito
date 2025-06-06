@@ -1,4 +1,4 @@
-name: Deploy
+name: "Deploy"
 
 on: push
 
@@ -20,7 +20,7 @@ jobs:
         run: redis-cli -h localhost ping  # Todo en minúsculas
 
       - name: Print variable
-        run: echo "${{ secrets.SECRET_TOKEN }}" 
+        run: echo # "${{ secrets.SECRET_TOKEN }}" 
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
