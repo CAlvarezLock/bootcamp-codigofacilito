@@ -1,6 +1,6 @@
 name: Deploy
 
-on: [push]
+on: push
 
 jobs:
   first_job:  # Nombre del job (sin 's' al final)
