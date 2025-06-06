@@ -20,7 +20,7 @@ jobs:
         run: redis-cli -h localhost ping  # Todo en minúsculas
 
       - name: Print variable
-        run: echo "${{ secrets.TOKEN_SECRET }}" # Sintaxis correcta para secrets
+        run: echo "${{ secrets.SECRET_TOKEN }}" 
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
