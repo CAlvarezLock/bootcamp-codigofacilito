@@ -17,10 +17,10 @@ jobs:
         run: sudo apt-get update -y && sudo apt-get install redis-tools -y
 
       - name: Test redis
-        run: redis-cli -h localhost ping  # No necesita especificar puerto si es el default
+        run: redis-cli -h localhost ping  # Todo en minúsculas
 
       - name: Print variable
-        run: echo "$({ secrets.TOKEN_SECRET )}"  # Sintaxis correcta para secrets
+        run: echo "${{ secrets.TOKEN_SECRET }}" # Sintaxis correcta para secrets
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
