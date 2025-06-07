@@ -7,13 +7,14 @@ jobs:
     runs-on: ubuntu-latest  
 
     steps:
+
       - name: Print variable
         run: echo "${{ secrets.TOKEN_SECRET }}" 
 
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: setup
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '18'
@@ -22,4 +23,4 @@ jobs:
         run: npm install
 
       - name: Run test 
-        run: npm run test
+        run: npx jest  # ¡Cambio clave aquí!
