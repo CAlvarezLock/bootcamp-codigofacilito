@@ -3,8 +3,8 @@ name: clase_03
 on: push
 
 jobs:
-  first_job:  # Nombre del job (sin 's' al final)
-    runs-on: ubuntu-latest  # Faltaba especificar el sistema operativo
+  first_job:  
+    runs-on: ubuntu-latest  
 
     steps:
       - name: Print variable
