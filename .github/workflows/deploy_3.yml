@@ -1,26 +1,21 @@
 name: clase_03
-
 on: push
 
 jobs:
-  first_job:  
-    runs-on: ubuntu-latest  
-
+  test:
+    runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
 
-      - name: Print variable
-        run: echo "${{ secrets.TOKEN_SECRET }}" 
-
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-      
-      - name: Instalar dependencias
-        run: npm install
 
-      - name: Run test 
-        run: npx jest  # ¡Cambio clave aquí!
+      - name: Instalar dependencias
+        run: |
+          npm ci
+          npm install -g jest
+
+      - name: Run tests
+        run: ./node_modules/.bin/jest
