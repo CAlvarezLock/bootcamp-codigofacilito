@@ -35,8 +35,8 @@ Actualmente, he completado:
 ## 🔗 Contacto  
 
 Si tienes sugerencias o quieres colaborar, ¡no dudes en contactarme!  
-📧 **Email**: [tu-email@ejemplo.com]  
-🔗 **LinkedIn**: [tu-perfil-linkedin]  
+📧 **Email**: [cinthya.alvarez.lock@gmail.com]  
+🔗 **LinkedIn**: https://www.linkedin.com/in/cinthya-alvarez/ 
 
 ¡Gracias por visitar mi repositorio! ✨  
 
