@@ -1,27 +1,36 @@
 {
-  "name": "bootcamp-codigofacilito",
+  "name": "@calvarezlock/bootcamp-codigofacilito",
   "version": "1.0.0",
-  "description": "¡Bienvenido/a a mi repositorio del **Bootcamp de CódigoFacilito**! Aquí encontrarás los proyectos, ejercicios y prácticas que he desarrollado durante mi formación en el bootcamp.",
+  "description": "Repositorio del Bootcamp de CódigoFacilito con proyectos y ejercicios",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CAlvarezLock/bootcamp-codigofacilito"
+    "url": "https://github.com/CAlvarezLock/bootcamp-codigofacilito.git"
   },
-  "keywords": [],
-  "author": "Cinthya Alvarez",
+  "keywords": [
+    "bootcamp",
+    "codigofacilito",
+    "learning"
+  ],
+  "author": "Cinthya Alvarez <tu-email@ejemplo.com>",
   "license": "MIT",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
   },
   "bugs": {
     "url": "https://github.com/CAlvarezLock/bootcamp-codigofacilito/issues"
   },
+  "homepage": "https://github.com/CAlvarezLock/bootcamp-codigofacilito#readme",
   "dependencies": {
     "canvas": "^3.1.0",
     "chart.js": "^4.4.9",
     "chartjs-node-canvas": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.x"
   }
 }
