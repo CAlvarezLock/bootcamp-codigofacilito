@@ -1,28 +1,22 @@
 {
-  "name": "clase_04/paquete-estadistica",
+  "name": "bootcamp-codigofacilito",
   "version": "1.0.0",
+  "description": "¡Bienvenido/a a mi repositorio del **Bootcamp de CódigoFacilito**! Aquí encontrarás los proyectos, ejercicios y prácticas que he desarrollado durante mi formación en el bootcamp.",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/icebeam7/paquete-estadistica-js.git"
+    "url": "https://github.com/CAlvarezLock/bootcamp-codigofacilito"
   },
   "keywords": [],
-  "author": "Luis Beltrán",
+  "author": "Cinthya Alvarez",
   "license": "MIT",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
   "bugs": {
-    "url": "https://github.com/icebeam7/paquete-estadistica-js/issues"
-  },
-  "homepage": "https://github.com/icebeam7/paquete-estadistica-js#readme",
-  "description": "Funciones estadísticas y generación de gráficas con Node.js",
-  "dependencies": {
-    "canvas": "^3.1.0",
-    "chart.js": "^4.4.9",
-    "chartjs-node-canvas": "^5.0.0"
+    "url": "https://github.com/CAlvarezLock/bootcamp-codigofacilito/issues"
   }
 }
