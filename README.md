@@ -19,10 +19,10 @@
 
 El repositorio está organizado por módulos o temas cubiertos en el bootcamp, por ejemplo:  
 
-├── modulo-1-fundamentos
-├── modulo-2-frontend
-├── modulo-3-backend
-└── ...
+├── modulo-1-fundamentos <br>
+├── modulo-2-frontend <br>
+├── modulo-3-backend <br>
+└── ... <br>
 
 
 ## 📅 Progreso actual  
